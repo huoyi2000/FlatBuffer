@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97861C781F99D33400D305A5 /* FBTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6C1161F99D004006FCA36 /* FBTable.m */; };
+		97861C791F99D34F00D305A5 /* FBMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6C1121F99D004006FCA36 /* FBMutableArray.m */; };
+		97861C7A1F99D34F00D305A5 /* FBMutableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6C1141F99D004006FCA36 /* FBMutableData.m */; };
+		97861C7B1F99D34F00D305A5 /* YMSocketUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6C1191F99D004006FCA36 /* YMSocketUtils.m */; };
+		97861C7F1F99D4A400D305A5 /* GCDSocketLongLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 97861C7E1F99D4A400D305A5 /* GCDSocketLongLink.m */; };
+		97C923A41F99DA7500C72C6B /* SLTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C923A31F99DA7500C72C6B /* SLTask.m */; };
+		97C923A51F99DC9B00C72C6B /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6C1051F99CFAA006FCA36 /* GCDAsyncSocket.m */; };
+		97D5B9AE1F99E591007E771A /* FBConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 97F6C10E1F99CFE3006FCA36 /* FBConfig.plist */; };
 		97F6C0EE1F99CF6A006FCA36 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6C0ED1F99CF6A006FCA36 /* AppDelegate.m */; };
 		97F6C0F11F99CF6A006FCA36 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6C0F01F99CF6A006FCA36 /* ViewController.m */; };
 		97F6C0F41F99CF6A006FCA36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F6C0F21F99CF6A006FCA36 /* Main.storyboard */; };
 		97F6C0F61F99CF6A006FCA36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97F6C0F51F99CF6A006FCA36 /* Assets.xcassets */; };
 		97F6C0F91F99CF6A006FCA36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97F6C0F71F99CF6A006FCA36 /* LaunchScreen.storyboard */; };
 		97F6C0FC1F99CF6A006FCA36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6C0FB1F99CF6A006FCA36 /* main.m */; };
+		97F6C10A1F99CFBD006FCA36 /* NSData+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6C1091F99CFBD006FCA36 /* NSData+Util.m */; };
+		97F6C10D1F99CFD0006FCA36 /* ServerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6C10B1F99CFCF006FCA36 /* ServerInfo.m */; };
+		97F6C11C1F99D05D006FCA36 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6C11B1F99D05D006FCA36 /* UIAlertView+Block.m */; };
+		97F6C1201F99D099006FCA36 /* Err.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F6C11F1F99D099006FCA36 /* Err.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97861C7D1F99D4A400D305A5 /* GCDSocketLongLink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDSocketLongLink.h; sourceTree = "<group>"; };
+		97861C7E1F99D4A400D305A5 /* GCDSocketLongLink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDSocketLongLink.m; sourceTree = "<group>"; };
+		97C923A21F99DA7500C72C6B /* SLTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLTask.h; sourceTree = "<group>"; };
+		97C923A31F99DA7500C72C6B /* SLTask.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLTask.m; sourceTree = "<group>"; };
 		97F6C0E91F99CF6A006FCA36 /* FlatBufferDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlatBufferDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97F6C0EC1F99CF6A006FCA36 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		97F6C0ED1F99CF6A006FCA36 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +42,29 @@
 		97F6C0F81F99CF6A006FCA36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97F6C0FA1F99CF6A006FCA36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97F6C0FB1F99CF6A006FCA36 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		97F6C1041F99CFAA006FCA36 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		97F6C1051F99CFAA006FCA36 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		97F6C1061F99CFAA006FCA36 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		97F6C1071F99CFAA006FCA36 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		97F6C1081F99CFBD006FCA36 /* NSData+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Util.h"; sourceTree = "<group>"; };
+		97F6C1091F99CFBD006FCA36 /* NSData+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Util.m"; sourceTree = "<group>"; };
+		97F6C10B1F99CFCF006FCA36 /* ServerInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerInfo.m; sourceTree = "<group>"; };
+		97F6C10C1F99CFCF006FCA36 /* ServerInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerInfo.h; sourceTree = "<group>"; };
+		97F6C10E1F99CFE3006FCA36 /* FBConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FBConfig.plist; sourceTree = "<group>"; };
+		97F6C1101F99D004006FCA36 /* FBConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBConstants.h; sourceTree = "<group>"; };
+		97F6C1111F99D004006FCA36 /* FBMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBMutableArray.h; sourceTree = "<group>"; };
+		97F6C1121F99D004006FCA36 /* FBMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBMutableArray.m; sourceTree = "<group>"; };
+		97F6C1131F99D004006FCA36 /* FBMutableData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBMutableData.h; sourceTree = "<group>"; };
+		97F6C1141F99D004006FCA36 /* FBMutableData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBMutableData.m; sourceTree = "<group>"; };
+		97F6C1151F99D004006FCA36 /* FBTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBTable.h; sourceTree = "<group>"; };
+		97F6C1161F99D004006FCA36 /* FBTable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBTable.m; sourceTree = "<group>"; };
+		97F6C1181F99D004006FCA36 /* YMSocketUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMSocketUtils.h; sourceTree = "<group>"; };
+		97F6C1191F99D004006FCA36 /* YMSocketUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMSocketUtils.m; sourceTree = "<group>"; };
+		97F6C11A1F99D05C006FCA36 /* UIAlertView+Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
+		97F6C11B1F99D05D006FCA36 /* UIAlertView+Block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
+		97F6C11D1F99D077006FCA36 /* staticFuncs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = staticFuncs.h; sourceTree = "<group>"; };
+		97F6C11E1F99D099006FCA36 /* Err.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Err.h; sourceTree = "<group>"; };
+		97F6C11F1F99D099006FCA36 /* Err.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Err.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +78,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97861C7C1F99D48A00D305A5 /* GCDSocketLongLink */ = {
+			isa = PBXGroup;
+			children = (
+				97C923A21F99DA7500C72C6B /* SLTask.h */,
+				97C923A31F99DA7500C72C6B /* SLTask.m */,
+				97861C7D1F99D4A400D305A5 /* GCDSocketLongLink.h */,
+				97861C7E1F99D4A400D305A5 /* GCDSocketLongLink.m */,
+			);
+			path = GCDSocketLongLink;
+			sourceTree = "<group>";
+		};
 		97F6C0E01F99CF6A006FCA36 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +112,19 @@
 				97F6C0ED1F99CF6A006FCA36 /* AppDelegate.m */,
 				97F6C0EF1F99CF6A006FCA36 /* ViewController.h */,
 				97F6C0F01F99CF6A006FCA36 /* ViewController.m */,
+				97F6C1081F99CFBD006FCA36 /* NSData+Util.h */,
+				97F6C1091F99CFBD006FCA36 /* NSData+Util.m */,
+				97F6C11D1F99D077006FCA36 /* staticFuncs.h */,
+				97F6C11A1F99D05C006FCA36 /* UIAlertView+Block.h */,
+				97F6C11B1F99D05D006FCA36 /* UIAlertView+Block.m */,
+				97F6C10C1F99CFCF006FCA36 /* ServerInfo.h */,
+				97F6C10B1F99CFCF006FCA36 /* ServerInfo.m */,
+				97F6C11E1F99D099006FCA36 /* Err.h */,
+				97F6C11F1F99D099006FCA36 /* Err.m */,
+				97F6C10E1F99CFE3006FCA36 /* FBConfig.plist */,
+				97861C7C1F99D48A00D305A5 /* GCDSocketLongLink */,
+				97F6C10F1F99D004006FCA36 /* FlatBuffer */,
+				97F6C1031F99CFAA006FCA36 /* GCDAsyncSocket */,
 				97F6C0F21F99CF6A006FCA36 /* Main.storyboard */,
 				97F6C0F51F99CF6A006FCA36 /* Assets.xcassets */,
 				97F6C0F71F99CF6A006FCA36 /* LaunchScreen.storyboard */,
@@ -69,6 +132,41 @@
 				97F6C0FB1F99CF6A006FCA36 /* main.m */,
 			);
 			path = FlatBufferDemo;
+			sourceTree = "<group>";
+		};
+		97F6C1031F99CFAA006FCA36 /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				97F6C1041F99CFAA006FCA36 /* GCDAsyncSocket.h */,
+				97F6C1051F99CFAA006FCA36 /* GCDAsyncSocket.m */,
+				97F6C1061F99CFAA006FCA36 /* GCDAsyncUdpSocket.h */,
+				97F6C1071F99CFAA006FCA36 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCDAsyncSocket;
+			sourceTree = "<group>";
+		};
+		97F6C10F1F99D004006FCA36 /* FlatBuffer */ = {
+			isa = PBXGroup;
+			children = (
+				97F6C1101F99D004006FCA36 /* FBConstants.h */,
+				97F6C1111F99D004006FCA36 /* FBMutableArray.h */,
+				97F6C1121F99D004006FCA36 /* FBMutableArray.m */,
+				97F6C1131F99D004006FCA36 /* FBMutableData.h */,
+				97F6C1141F99D004006FCA36 /* FBMutableData.m */,
+				97F6C1151F99D004006FCA36 /* FBTable.h */,
+				97F6C1161F99D004006FCA36 /* FBTable.m */,
+				97F6C1171F99D004006FCA36 /* SocketUtils */,
+			);
+			path = FlatBuffer;
+			sourceTree = "<group>";
+		};
+		97F6C1171F99D004006FCA36 /* SocketUtils */ = {
+			isa = PBXGroup;
+			children = (
+				97F6C1181F99D004006FCA36 /* YMSocketUtils.h */,
+				97F6C1191F99D004006FCA36 /* YMSocketUtils.m */,
+			);
+			path = SocketUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97D5B9AE1F99E591007E771A /* FBConfig.plist in Resources */,
 				97F6C0F91F99CF6A006FCA36 /* LaunchScreen.storyboard in Resources */,
 				97F6C0F61F99CF6A006FCA36 /* Assets.xcassets in Resources */,
 				97F6C0F41F99CF6A006FCA36 /* Main.storyboard in Resources */,
@@ -142,8 +241,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97C923A51F99DC9B00C72C6B /* GCDAsyncSocket.m in Sources */,
+				97861C791F99D34F00D305A5 /* FBMutableArray.m in Sources */,
+				97861C7A1F99D34F00D305A5 /* FBMutableData.m in Sources */,
+				97861C7B1F99D34F00D305A5 /* YMSocketUtils.m in Sources */,
+				97861C7F1F99D4A400D305A5 /* GCDSocketLongLink.m in Sources */,
+				97861C781F99D33400D305A5 /* FBTable.m in Sources */,
+				97F6C10A1F99CFBD006FCA36 /* NSData+Util.m in Sources */,
 				97F6C0F11F99CF6A006FCA36 /* ViewController.m in Sources */,
+				97F6C1201F99D099006FCA36 /* Err.m in Sources */,
 				97F6C0FC1F99CF6A006FCA36 /* main.m in Sources */,
+				97F6C11C1F99D05D006FCA36 /* UIAlertView+Block.m in Sources */,
+				97F6C10D1F99CFD0006FCA36 /* ServerInfo.m in Sources */,
+				97C923A41F99DA7500C72C6B /* SLTask.m in Sources */,
 				97F6C0EE1F99CF6A006FCA36 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -267,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -280,8 +390,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CAUNDFWNA8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FlatBufferDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yijianshi.FlatBufferDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -294,8 +407,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CAUNDFWNA8;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = FlatBufferDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yijianshi.FlatBufferDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
