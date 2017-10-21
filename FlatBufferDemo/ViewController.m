@@ -31,7 +31,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(socketDidConnect:) name:didConnectToHostNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(socketDidConnect:) name:socketDidConnectToHostNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(socketDidDisconnect:) name:socketDidDisconnectNotification object:nil];
     //连接服务器
     [GCDSocketLongLink connectToHost:dns_server_domain onPort:dns_socket_port];
 }
@@ -46,6 +47,11 @@
     [GCDSocketLongLink send:req recv:^(ServerInfoRep *rep, NSError *err) {
         NSLog(@"");
     }];
+}
+
+- (void)socketDidDisconnect:(NSNotification *)notify
+{
+    NSLog(@"%s",__func__);
 }
 
 @end
