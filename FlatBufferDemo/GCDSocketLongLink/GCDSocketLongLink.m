@@ -10,6 +10,7 @@
 #import "GCDAsyncSocket.h"
 #import "SLTask.h"
 #import "NSData+Util.h"
+#import "staticFuncs.h"
 
 NSString *socketDidConnectToHostNotification = @"socketDidConnectToHostNotification";
 NSString *socketDidDisconnectNotification = @"socketDidDisconnectNotification";
@@ -141,6 +142,13 @@ static GCDSocketLongLink *inst_socket = nil;
         if (task.recvData.length-16 == [task.recvData repLength]) {
             //请求完成
             NSLog(@"");
+            NSData *data_ = [NSData decodeData:task.recvData];
+            NSDictionary *dict = getFBConfig(task.sendData);
+            Class repCls = NSClassFromString(dict[@"repCls"]);
+            id obj = [repCls getRootAs:data_];
+            if (task.recvBlock) {
+                task.recvBlock(obj, nil);
+            }
         }
     }
 }
