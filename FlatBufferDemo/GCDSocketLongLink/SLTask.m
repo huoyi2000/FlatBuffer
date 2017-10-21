@@ -10,7 +10,7 @@
 
 @implementation SLTask
 
-static NSInteger taskBaseTag = 10000;
+NSInteger taskBaseTag = 10000;
 - (instancetype)init
 {
     if (self = [super init]) {
