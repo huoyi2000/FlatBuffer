@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "FBTable.h"
 
-FOUNDATION_EXPORT NSString *didConnectToHostNotification;
+FOUNDATION_EXPORT NSString *socketDidConnectToHostNotification;
+FOUNDATION_EXPORT NSString *socketDidDisconnectNotification;
 
 @interface GCDSocketLongLink : NSObject
 
