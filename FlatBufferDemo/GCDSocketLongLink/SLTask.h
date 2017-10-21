@@ -16,6 +16,8 @@ typedef NS_ENUM(NSInteger, SLTaskState) {
     SLTaskStateFail
 };
 
+FOUNDATION_EXPORT NSInteger taskBaseTag;
+
 @interface SLTask : NSObject
 
 @property (nonatomic, strong) FBTable *sendData;
@@ -25,5 +27,7 @@ typedef NS_ENUM(NSInteger, SLTaskState) {
 @property (nonatomic, assign) SLTaskState state;
 
 @property (nonatomic, assign) NSInteger tag;
+
+@property (nonatomic, strong) NSMutableData *recvData;
 
 @end
