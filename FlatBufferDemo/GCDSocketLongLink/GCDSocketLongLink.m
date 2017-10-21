@@ -11,7 +11,8 @@
 #import "SLTask.h"
 #import "NSData+Util.h"
 
-extern NSString *didConnectToHostNotification = @"didConnectToHostNotification";
+NSString *socketDidConnectToHostNotification = @"socketDidConnectToHostNotification";
+NSString *socketDidDisconnectNotification = @"socketDidDisconnectNotification";
 
 @interface GCDSocketLongLink ()<GCDAsyncSocketDelegate>
 
@@ -118,17 +119,36 @@ static GCDSocketLongLink *inst_socket = nil;
 - (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port
 {
     NSLog(@"%s",__func__);
-    [[NSNotificationCenter defaultCenter] postNotificationName:didConnectToHostNotification object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:socketDidConnectToHostNotification object:nil];
 }
 
 - (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag
 {
     NSLog(@"%s",__func__);
+    
+    //通过tag找到对应的请求
+    @synchronized(self)
+    {
+        SLTask *task = self.tasks[tag-10000];
+        if (!task.recvData) {
+            task.recvData = [NSMutableData new];
+        }
+        
+        if (data.length) {
+            [task.recvData appendData:data];
+        }
+        
+        if (task.recvData.length-16 == [task.recvData repLength]) {
+            //请求完成
+            NSLog(@"");
+        }
+    }
 }
 
 - (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err
 {
     NSLog(@"%s",__func__);
+    [[NSNotificationCenter defaultCenter] postNotificationName:socketDidDisconnectNotification object:nil];
 }
 
 #pragma mark - getters
